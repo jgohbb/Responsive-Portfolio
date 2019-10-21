@@ -125,6 +125,7 @@ p {
 hr {
     color: rgb(211, 214, 213);
     width: 900px;
+    margin: 0 0 20px 0;
 }
 
 footer {
@@ -168,7 +169,7 @@ footer {
     font-size: 20px;
     font-weight: bold;
     padding-bottom: 10px;
-    border-bottom-color;: #777777;
+    margin: 10px 0 0 0;
 }
 
 
@@ -210,18 +211,31 @@ footer {
 /* Below CSS codes for Portfolio */
 
 
+.portfolio-main {
+    clear: both;
+    margin: 0 auto;
+    background:#ffffff;
+    color: #777777;
+    width: 960px;
+    height: 780px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
 .container-portfolio {
     width: 900px;
-
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: max-content;
 }
 
 h4 {
     color: #4aaaa5;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
     font-weight: bold;
     padding-bottom: 10px;
-    margin: 10px;
+    margin: 10px 0 0 10px;
 }
 
 .box-set {
@@ -235,11 +249,11 @@ h4 {
 }
 
 .box-1 {
-    top: 40px;
+    top: 10px;
 }
 
 .box-2 {
-    top: -10px;
+    top: -40px;
     background: #4aaaa5;
     color: #ffffff;
     padding: 10px;
@@ -248,14 +262,14 @@ h4 {
 }
 
 .box-3 {
-    top: -175px;
+    top: -205px;
     left: 290px;
     height: 109px;
     padding: 0 0 0 0;
 }
 
 .box-4 {
-    top:-155px;
+    top:-185px;
     right: -290px;
     background: #4aaaa5;
     color: #ffffff;
@@ -265,11 +279,11 @@ h4 {
 }
 
 .box-5 {
-    top: -90px;
+    top: -130px;
 }
 
 .box-6 {
-    top: -138px;
+    top: -178px;
     left: 0px;
     margin: 0;
     text-align: center;
@@ -280,12 +294,12 @@ h4 {
 }
 
 .box-7 {
-    bottom: 305px;
+    bottom: 345px;
     left: 290px;;
 }
 
 .box-8 {
-    top:-355px;
+    top:-395px;
     right: -290px;
     background: #4aaaa5;
     color: #ffffff;
@@ -295,11 +309,11 @@ h4 {
 }
 
 .box-9 {
-    top: -290px;
+    top: -340px;
 }
 
 .box-10 {
-    top:-340px;
+    top:-390px;
     background: #4aaaa5;
     color: #ffffff;
     padding: 10px;
@@ -309,8 +323,8 @@ h4 {
 
 #hr2 {
     color: rgb(211, 214, 213);
-    width:900px;
-    margin-left: 9px;
+    width:100%;
+    margin-left: 10px;
 }
 
 @media screen and (max-width: 980px) {
@@ -353,24 +367,25 @@ h4 {
         margin-left:  30px;
     }
 
+    .container-form {
+        width: 100%;
+    }
+
     #name {
-        width: 68%;
+        width: 98.2%;
     }
     
     #email {
-        width: 68%;
-
+        width: 98.2%;
     }
     
     #textarea {
-        width: 68%;
+        width: 98.2%;
     }
 
-    #hr2 {
-        width: 92%;
-        margin-right: 100px;
+    #highlight {
+        width: 98.2%;
     }
-
 
     /* media query for PORTFOLIO */
 
@@ -388,9 +403,9 @@ h4 {
     }
     
 
-    #break {
-        width: 92%;
-        margin: 10px;
+    #hr2 {
+        width: 92.5%;
+        margin: 0 0 20px 10px;
     }
 
 }
