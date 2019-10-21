@@ -83,7 +83,6 @@ a:hover::before {
 
 main {
     clear: both;
-    overflow: auto;
     margin: 0 auto;
     background:#ffffff;
     color: #777777;
@@ -213,7 +212,7 @@ footer {
 
 .container-portfolio {
     width: 900px;
-    margin: 10px;
+
 }
 
 h4 {
@@ -228,7 +227,7 @@ h4 {
 .box-set {
     width: 100%;
     margin: 10px;
-    position: relative;
+
 }
 
 .box {
@@ -244,24 +243,24 @@ h4 {
     background: #4aaaa5;
     color: #ffffff;
     padding: 10px;
-    width: 200px;
+    width: 250px;
     text-align: center;
 }
 
 .box-3 {
-    top: -142px;
-    left: 250px;
+    top: -175px;
+    left: 290px;
     height: 109px;
     padding: 0 0 0 0;
 }
 
 .box-4 {
     top:-155px;
-    right: -250px;
+    right: -290px;
     background: #4aaaa5;
     color: #ffffff;
     padding: 10px;
-    width: 200px;
+    width: 250px;
     text-align: center;
 }
 
@@ -277,34 +276,34 @@ h4 {
     color: #ffffff;
     background: #4aaaa5;
     padding: 10px;
-    width: 200px;
+    width: 250px;
 }
 
 .box-7 {
-    bottom: 270px;
-    left: 250px;;
+    bottom: 305px;
+    left: 290px;;
 }
 
 .box-8 {
-    top:-320px;
-    right: -250px;
+    top:-355px;
+    right: -290px;
     background: #4aaaa5;
     color: #ffffff;
     padding: 10px;
-    width: 200px;
+    width: 250px;
     text-align: center;
 }
 
 .box-9 {
-    top: -260px;
+    top: -290px;
 }
 
 .box-10 {
-    top:-310px;
+    top:-340px;
     background: #4aaaa5;
     color: #ffffff;
     padding: 10px;
-    width: 200px;
+    width: 250px;
     text-align: center;
 }
 
@@ -335,7 +334,7 @@ h4 {
     }
 
     hr {
-        width: 90%;
+        width: 91%;
         margin-right: 100px;
     }
     
@@ -346,6 +345,7 @@ h4 {
         width: 88%;
     }
 
+    
     /* media query for CONTACT */
 
     .contact-main {
@@ -366,11 +366,113 @@ h4 {
         width: 68%;
     }
 
-    #hr3 {
-        width: 90%;
+    #hr2 {
+        width: 92%;
         margin-right: 100px;
     }
 
 
+    /* media query for PORTFOLIO */
+
+    .portfolio-main {
+        width: 670px;
+        margin-left: 30px;
+    }
+    
+    .container-portfolio {
+        width: 670px;
+    }
+
+    .box-set {
+     
+    }
+    
+
+    #break {
+        width: 92%;
+        margin: 10px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    #pic1 {
+        width: 250px;
+        height: 175px;
+    }
+    
+    .box-1 {
+    
+    }
+    
+
+    .box-2 {
+
+    }
+
+    #pic2 {
+        width: 250px;
+        height: 175px;    
+    }  
+    
+    .box-3 {
+
+    }
+    
+    .box-4 {
+
+    }
+    
+    #pic3 {
+        width: 250px;
+        height: 175px;    
+    }
+    .box-5 {
+
+    }
+    
+    .box-6 {
+
+    }
+  
+    #pic4 {
+        width: 250px;
+        height: 175px;    
+    }
+
+    .box-7 {
+
+    }
+    
+    .box-8 {
+
+    }
+    
+    #pic5 {
+        width: 250px;
+        height: 175px;    
+    }
+
+    .box-9 {
+ 
+    }
+    
+    .box-10 {
+    }
 
 }
