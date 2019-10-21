@@ -105,6 +105,9 @@ h2 {
     font-size: 20px;
     font-weight: bold;
     padding-bottom: 10px;
+    border-bottom-color: black;
+    border-width: 700;
+    
 }
 
 
@@ -122,7 +125,7 @@ p {
 
 hr {
     color: rgb(211, 214, 213);
-    width:900px;
+    width: 900px;
 }
 
 footer {
@@ -166,6 +169,7 @@ footer {
     font-size: 20px;
     font-weight: bold;
     padding-bottom: 10px;
+    border-bottom-color;: #777777;
 }
 
 
@@ -308,4 +312,65 @@ h4 {
     color: rgb(211, 214, 213);
     width:900px;
     margin-left: 9px;
+}
+
+@media screen and (max-width: 980px) {
+    body {
+        width: 100%;
+    }
+
+    .navbar {
+        width: 100%;
+        background: #ffffff;
+        padding-left: 30px;
+    }
+
+    .profile-wrap {
+        margin-left: 30px;
+        width: 670px;
+    }
+
+    .container {
+        width: 680px;
+    }
+
+    hr {
+        width: 90%;
+        margin-right: 100px;
+    }
+    
+    #image {
+        width: 23%;
+    }
+    .wrapper {
+        width: 88%;
+    }
+
+    /* media query for CONTACT */
+
+    .contact-main {
+        width: 670px;
+        margin-left:  30px;
+    }
+
+    #name {
+        width: 68%;
+    }
+    
+    #email {
+        width: 68%;
+
+    }
+    
+    #textarea {
+        width: 68%;
+    }
+
+    #hr3 {
+        width: 90%;
+        margin-right: 100px;
+    }
+
+
+
 }
