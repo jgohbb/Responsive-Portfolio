@@ -1,0 +1,311 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background:rgb(211, 214, 213);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #ffffff;
+    text-align: center;
+    clear: both;
+
+}
+
+/* clearfix to sort out the nav bar getting mess up*/
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.navbar { 
+    width: 960px;
+    margin: 0 auto;
+}
+
+.brand {
+    background: #4aaaa5;
+    color: #ffffff;
+    padding: 20px 26px 20px 26px;  
+    text-align: center;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    float: left;
+    border-left: 10px;
+    font-weight: 550;
+}
+
+
+.links {
+    float: right;
+    background: #ffffff;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    margin-left: 20px;
+    padding-top: 22px;
+
+    position: relative;
+}
+
+a {
+    color: #777777;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+/*create a pseudo element "before to create an effect on the top when hovering.*/
+a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background: rgb(78, 76, 76);
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
+}
+
+a:hover::before {
+    width: 100%;
+}
+
+main {
+    clear: both;
+    overflow: auto;
+    margin: 0 auto;
+    background:#ffffff;
+    color: #777777;
+    width: 960px;
+    height: fit-content;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.container {
+    width: 900px;
+    margin: 10px;
+}
+
+h2 {
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+
+#image {
+    float: left;
+    margin: 10px 20px 10px 0;
+}
+
+p {
+    padding-top: 8px;
+    margin-top: 8px;
+    line-height: 25px;
+    
+}
+
+hr {
+    color: rgb(211, 214, 213);
+    width:900px;
+}
+
+footer {
+    clear: both;
+    overflow: 0 auto;
+    margin: 0 auto;
+    text-align: center;
+    background: #666666;
+    color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    font-size: 10px;
+    border-top: 5px solid #4aaaa5;
+    height: auto;
+
+
+}/* Below CSS for CONTACT html*/
+
+ .contact-main {
+    clear: both;
+    overflow: auto;
+    margin: 0 auto;
+    background:#ffffff;
+    color: #777777;
+    width: 960px;
+    height: fit-content;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.container-form {
+    width: 900px;
+    margin: 10px;
+}
+
+.contact-title {
+    width: 900px;
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+
+#label-name {
+    padding: 30px 0 10px 0;
+    margin-top: 30px;
+}
+
+
+#name {
+    width: 900px;
+    margin: 5px 0 13px 0;
+    border-color: rgb(211, 214, 213);
+    border-width: thin;
+    padding: 5px 0 5px 0;
+}
+
+#email {
+    width: 900px;
+    margin: 5px 0 13px 0;
+    border-color:rgb(211, 214, 213);
+    padding: 5px 0 5px 0;
+    border-width: thin;
+}
+
+#textarea {
+    width: 900px;
+    margin: 5px 0 13px 0;
+    border-color: rgb(211, 214, 213);
+}
+
+#sub {
+    background: #4aaaa5;
+    color: #ffffff;
+    padding: 8px 20px 8px 20px;
+}
+
+
+/* Below CSS codes for Portfolio */
+
+
+.container-portfolio {
+    width: 900px;
+    margin: 10px;
+}
+
+h4 {
+    color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin: 10px;
+}
+
+.box-set {
+    width: 100%;
+    margin: 10px;
+    position: relative;
+}
+
+.box {
+    position: relative;
+}
+
+.box-1 {
+    top: 40px;
+}
+
+.box-2 {
+    top: -10px;
+    background: #4aaaa5;
+    color: #ffffff;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.box-3 {
+    top: -142px;
+    left: 250px;
+    height: 109px;
+    padding: 0 0 0 0;
+}
+
+.box-4 {
+    top:-155px;
+    right: -250px;
+    background: #4aaaa5;
+    color: #ffffff;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.box-5 {
+    top: -90px;
+}
+
+.box-6 {
+    top: -138px;
+    left: 0px;
+    margin: 0;
+    text-align: center;
+    color: #ffffff;
+    background: #4aaaa5;
+    padding: 10px;
+    width: 200px;
+}
+
+.box-7 {
+    bottom: 270px;
+    left: 250px;;
+}
+
+.box-8 {
+    top:-320px;
+    right: -250px;
+    background: #4aaaa5;
+    color: #ffffff;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.box-9 {
+    top: -260px;
+}
+
+.box-10 {
+    top:-310px;
+    background: #4aaaa5;
+    color: #ffffff;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+#hr2 {
+    color: rgb(211, 214, 213);
+    width:900px;
+    margin-left: 9px;
+}
