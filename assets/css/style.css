@@ -49,7 +49,7 @@ header::after {
 
 li {
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 0;
     padding-top: 22px;
 
     position: relative;
@@ -58,6 +58,25 @@ li {
 a {
     color: #777777;
     text-decoration: none;
+}
+
+#about {
+    border-right-color: rgb(211, 214, 213);
+    border-right-style: solid;
+    border-width: thin;
+    padding-right: 10px;
+}
+
+#portfolio {
+    border-right-color: rgb(211, 214, 213);
+    border-right-style: solid;
+    border-width: thin;
+    padding-right: 10px;
+    padding-left: 7px;
+}
+
+#contact {
+    padding-left: 7px;
 }
 
 a:hover {
@@ -211,7 +230,7 @@ footer {
     background:#ffffff;
     color: #777777;
     width: 960px;
-    height: 780px;
+    height: 850px;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 20px;
@@ -219,9 +238,8 @@ footer {
 
 .container-portfolio {
     width: 900px;
-    margin: 0;
+    margin: 10px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    height: max-content;
 }
 
 h4 {
@@ -229,12 +247,12 @@ h4 {
     font-size: 20px;
     font-weight: bold;
     padding-bottom: 10px;
-    margin: 10px 0 0 10px;
+    margin: 10px 0 0 0;
 }
 
 .box-set {
     width: 100%;
-    margin: 10px;
+    margin: 0;
 }
 
 .box {
@@ -245,34 +263,49 @@ h4 {
     top: 10px;
 }
 
+#pic1 {
+    width: 280px;
+    height: 205px;
+}
+
 .box-2 {
     top: -40px;
     background: #4aaaa5;
     color: #ffffff;
     padding: 10px;
-    width: 250px;
+    width: 280px;
     text-align: center;
 }
 
 .box-3 {
-    top: -205px;
-    left: 290px;
+    top: -235px;
+    left: 315px;
     height: 109px;
     padding: 0 0 0 0;
 }
 
+#pic2 {
+    width: 280px;
+    height: 205px;
+}
+
 .box-4 {
     top:-185px;
-    right: -290px;
+    right: -315px;
     background: #4aaaa5;
     color: #ffffff;
     padding: 10px;
-    width: 250px;
+    width: 280px;
     text-align: center;
 }
 
 .box-5 {
     top: -130px;
+}
+
+#pic3 {
+    width: 280px;
+    height: 205px;
 }
 
 .box-6 {
@@ -283,41 +316,51 @@ h4 {
     color: #ffffff;
     background: #4aaaa5;
     padding: 10px;
-    width: 250px;
+    width: 280px;
 }
 
 .box-7 {
-    bottom: 345px;
-    left: 290px;;
+    bottom: 375px;
+    left: 315px;;
+}
+
+#pic4 {
+    width: 280px;
+    height: 205px;
 }
 
 .box-8 {
-    top:-395px;
-    right: -290px;
+    top:-425px;
+    right: -315px;
     background: #4aaaa5;
     color: #ffffff;
     padding: 10px;
-    width: 250px;
+    width: 280px;
     text-align: center;
 }
 
 .box-9 {
-    top: -340px;
+    top: -370px;
+}
+
+#pic5 {
+    width: 280px;
+    height: 205px;
 }
 
 .box-10 {
-    top:-390px;
+    top:-420px;
     background: #4aaaa5;
     color: #ffffff;
     padding: 10px;
-    width: 250px;
+    width: 280px;
     text-align: center;
 }
 
 #hr2 {
     color: rgb(211, 214, 213);
     width:100%;
-    margin-left: 10px;
+    margin-left:0;
 }
 
 @media screen and (max-width: 980px) {
@@ -331,13 +374,17 @@ h4 {
         padding-left: 30px;
     }
 
+    .links {
+        padding-right: 20px;
+    }
+
     .profile-wrap {
         margin-left: 30px;
-        width: 670px;
+        width: 680px;
     }
 
     .container {
-        width: 680px;
+        width: 670px;
     }
 
     hr {
@@ -353,14 +400,91 @@ h4 {
     }
 
     
-    /* media query for CONTACT */
+    /* media query for CONTACT 980px*/
     .contact-main {
-        width: 670px;
+        width: 680px;
         margin-left:  30px;
     }
 
     .container-form {
+        width: 670px;
+    }
+
+    #name {
+        width: 98.2%;
+    }
+    
+    #email {
+        width: 98.2%;
+    }
+    
+    #textarea {
+        width: 98.2%;
+    }
+
+    #highlight {
+        width: 98.2%;
+    }
+
+    /* media query for PORTFOLIO 980px */   
+    .portfolio-main {
+        width: 680px;
+        margin-left: 30px;
+    }
+    
+    .container-portfolio {
+        width: 670px;
+    }
+   
+    #hr2 {
+        width: 92.5%;
+        margin: 0 0 20px 0;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    body {
         width: 100%;
+    }
+
+    .navbar {
+        width: 100%;
+        background: #ffffff;
+        padding-left: 20px;
+    }
+
+    .profile-wrap {
+        margin-left: 20px;
+        width: 95%;
+    }
+
+    .container {
+        width: 99%;
+    }
+
+    hr {
+        width: 98%;
+        margin-right: 100px;
+    }
+    
+    #image {
+        width: 30%;
+    }
+    .wrapper {
+        width: 98%;
+        font-size: 14px;
+    }
+
+    
+    /* media query for CONTACT 768px */
+    .contact-main {
+        width: 95%;
+        margin-left:  20px;
+    }
+
+    .container-form {
+        width: 99%;
     }
 
     #name {
@@ -380,91 +504,100 @@ h4 {
     }
 
 
-    /* media query for PORTFOLIO */
+
+
+    /* media query for PORTFOLIO 768px */
     .portfolio-main {
-        width: 670px;
-        margin-left: 30px;
+        width: 95%;
+        margin-left: 20px;
     }
     
     .container-portfolio {
-        width: 670px;
+        width: 99%;
     }
-
-    .box-set {
-     
-    }
-    
+   
     #hr2 {
-        width: 92.5%;
-        margin: 0 0 20px 10px;
+        width: 97.5%;
+        margin: 0 0 20px 0;
+        padding-left: 5px;
     }
 
-}
-
-@media screen and (max-width: 768px) {
+    .box-1 {
+        top: 10px;
+        width: 110%;
+    }
 
     #pic1 {
-        width: 250px;
-        height: 175px;
+        width: 305px;
+        height: 205px;
     }
     
-    .box-1 {
-    
-    }
-    
-
     .box-2 {
-
+        top: -40px; 
+        width: 305px;
     }
-
-    #pic2 {
-        width: 250px;
-        height: 175px;    
-    }  
     
     .box-3 {
+        top: -235px;
+        left: 340px;
+        height: 109px;
+        width: 305px;
+    }
 
+     #pic2 {
+        width: 305px;
+        height: 205px;
     }
     
     .box-4 {
-
+        top:-185px;
+        right: -340px;
+        width: 305px;
+    }
+    
+    .box-5 {
+        top: -130px;
     }
     
     #pic3 {
-        width: 250px;
-        height: 175px;    
+        width: 305px;
+        height: 205px;
     }
-    .box-5 {
 
-    }
-    
     .box-6 {
-
+        top: -178px;
+        left: 0px;
+        width: 305px;
     }
-  
-    #pic4 {
-        width: 250px;
-        height: 175px;    
-    }
-
+    
     .box-7 {
-
+        bottom: 375px;
+        left: 337px;;
     }
     
+    #pic4 {
+        width: 305px;
+        height: 205px;
+    }
+
     .box-8 {
-
+        top:-425px;
+        right: -337px;
+        width: 305px;
     }
     
-    #pic5 {
-        width: 250px;
-        height: 175px;    
+    .box-9 {
+        top: -370px;
     }
 
-    .box-9 {
- 
+    #pic5 {
+        width: 305px;
+        height: 205px;
     }
     
     .box-10 {
+        top:-420px;
+        width: 305px;
     }
-
+    
 }
