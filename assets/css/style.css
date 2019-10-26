@@ -671,6 +671,7 @@ h4 {
 
     .contact-title {
         padding-bottom: 22px;
+    }
 
     #name {
         width: 98.2%;
@@ -691,13 +692,14 @@ h4 {
 
     /* media query for PORTFOLIO 640px */
     .portfolio-main {
-        width: 93%;
+        width: 95%;
         margin-left: 20px;
-        height: fit-content;
+        height: 1850px;
     }
     
     .container-portfolio {
-        width: 97%;
+        width: 99%;
+
     }
    
     #hr2 {
@@ -706,92 +708,104 @@ h4 {
         padding-left: 5px;
     }
 
-    .box-1 {
-        top: 10px;
-        width: 200%;
-        z-index: 1;
+    .box {
+       clear: both; 
     }
 
+    .box-1 {
+        top: 10px;
+        width: 99%;
+       }
+
     #pic1 {
-        width: 405px;
-        height: 305px;
+        width: 99%;
+        height: auto ;
     }
     
     .box-2 {
-        top: -40px; 
-        width: 305px;
-        z-index: 2;
+        top: -50px;
+        right: 0px;
+        width: 98%;
+ 
     }
     
     .box-3 {
-        top: -235px;
-        left: 337px;
-        height: 109px;
-        width: 305px;
-        z-index: 10;
+        top: 20px;
+        left: 0;
+        height:0; 
+        width: 99%;
+    
     }
 
      #pic2 {
-        width: 305px;
-        height: 205px;
+        width: 99%;
+        height: auto;
     }
     
     .box-4 {
-        top:-185px;
-        right: -337px;
-        width: 305px;
-        z-index: 11;
+        top: 250px;
+        right: 0px ;
+        width: 98%;
+
     }
     
     .box-5 {
-        top: -130px;
-        z-index: 3;
+        top: 330px ;
+
     }
     
     #pic3 {
-        width: 305px;
-        height: 205px;
+        width: 99%;
+        height: auto ;
     }
 
     .box-6 {
-        top: -178px;
+        top: 260px;
         left: 0px;
-        width: 305px;
-        z-index: 4;
+        width: 99%;
+ 
     }
     
     .box-7 {
-        bottom: 375px;
-        left: 337px;;
-        z-index: 12;
+        top: 340px ;
+        left: 0px ;
+
     }
     
     #pic4 {
-        width: 305px;
-        height: 205px;
+        width:99%;
+        height: auto;
     }
 
     .box-8 {
-        top:-425px;
-        right: -337px;
-        width: 305px;
-        z-index: 13;
+        top: 270px;
+        width: 99%;
+        right: 0px;
+
     }
     
     .box-9 {
-        top: -370px;
-        z-index: 5;
+        top: 350px;
+
     }
 
     #pic5 {
-        width: 305px;
-        height: 205px;
+        width: 99%;
+        height: auto;
     }
     
     .box-10 {
-        top:-420px;
-        width: 305px;
-        z-index: 6;
+        top: 290px;
+        width: 99% ;
+
     }
     
+}
+
+
+
+/*.box-set::after {
+    content: "";
+    display: table;
+    clear: both;
 }
