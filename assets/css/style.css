@@ -54,16 +54,12 @@ li {
     position: relative;
 }
 
-a {
-    color: #777777;
-    text-decoration: none;
-}
-
 #about {
     border-right-color: rgb(211, 214, 213);
     border-right-style: solid;
     border-width: thin;
     padding-right: 10px;
+    color: #777777;
 }
 
 #portfolio {
@@ -72,26 +68,23 @@ a {
     border-width: thin;
     padding-right: 10px;
     padding-left: 7px;
+    color: #777777;
 }
 
 #contact {
     padding-left: 7px;
+    color: #777777;
+}
+
+
+/*create a pseudo element "before to create an effect on the top when hovering.*/
+a {
+    color: #ffffff;
+    text-decoration: none;
 }
 
 a:hover {
     color: red;
-}
-
-/*create a pseudo element "before to create an effect on the top when hovering.*/
-a::before {
-    content: '';
-    display: block;
-    height: 5px;
-    background: rgb(78, 76, 76);
-    position: absolute;
-    top: 0;
-    width: 0%;
-    transition: all ease-in-out 250ms;
 }
 
 a:hover::before {
@@ -134,7 +127,6 @@ p {
     padding-top: 8px;
     margin-top: 8px;
     line-height: 25px;
-    
 }
 
 hr {
@@ -288,7 +280,7 @@ h4 {
 }
 
 .box-4 {
-    top:-185px;
+    bottom: 185px;
     right: -315px;
     background: #4aaaa5;
     color: #ffffff;
@@ -308,8 +300,6 @@ h4 {
 
 .box-6 {
     top: -178px;
-    left: 0px;
-    margin: 0;
     text-align: center;
     color: #ffffff;
     background: #4aaaa5;
@@ -618,7 +608,6 @@ h4 {
         font-size: 20px;
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-weight: 550;
-    
     }
     
     .links {
@@ -694,12 +683,11 @@ h4 {
     .portfolio-main {
         width: 95%;
         margin-left: 20px;
-        height: 1850px;
+        min-height: 2100px;
     }
     
     .container-portfolio {
         width: 99%;
-
     }
    
     #hr2 {
@@ -709,13 +697,13 @@ h4 {
     }
 
     .box {
-       clear: both; 
+        clear: both; 
     }
 
     .box-1 {
         top: 10px;
         width: 99%;
-       }
+    }
 
     #pic1 {
         width: 99%;
@@ -723,18 +711,15 @@ h4 {
     }
     
     .box-2 {
-        top: -50px;
-        right: 0px;
+        top: -60px;
         width: 98%;
- 
     }
     
     .box-3 {
-        top: 20px;
-        left: 0;
-        height:0; 
-        width: 99%;
-    
+        top: 16px;
+        left: 0px;
+        width: 99%; 
+        height: auto; 
     }
 
      #pic2 {
@@ -743,69 +728,83 @@ h4 {
     }
     
     .box-4 {
-        top: 250px;
-        right: 0px ;
+        top: -60px;
         width: 98%;
-
+        right: 0px;
     }
     
     .box-5 {
-        top: 330px ;
-
+        top: 23px ;
     }
     
     #pic3 {
-        width: 99%;
+        width: 98%;
         height: auto ;
     }
 
     .box-6 {
-        top: 260px;
+        top: -40px;
         left: 0px;
-        width: 99%;
- 
-    }
+        width: 98%;
+     }
     
     .box-7 {
-        top: 340px ;
+        top: 30px ;
         left: 0px ;
-
     }
     
     #pic4 {
-        width:99%;
+        width:98%;
         height: auto;
     }
 
     .box-8 {
-        top: 270px;
-        width: 99%;
+        top: -40px;
+        width: 98%;
         right: 0px;
-
     }
     
     .box-9 {
-        top: 350px;
-
+        top: 40px;
     }
 
     #pic5 {
-        width: 99%;
+        width: 98%;
         height: auto;
     }
     
     .box-10 {
-        top: 290px;
-        width: 99% ;
-
-    }
-    
+        top: -30px;
+        width: 98% ;
+    }   
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+/* nice to have but not practical
 /*.box-set::after {
     content: "";
     display: table;
     clear: both;
+}
+#biolink::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background: #ffffff;
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 250ms;
 }
